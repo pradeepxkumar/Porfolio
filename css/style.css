@@ -1417,8 +1417,7 @@ a.achievement-card:hover {
 
 .sticky-card {
   position: sticky;
-  top: calc(var(--nav-h) + 24px);
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-left: 3px solid transparent;
@@ -1429,32 +1428,35 @@ a.achievement-card:hover {
   gap: 24px;
   align-items: start;
   transition: border-color var(--t), border-left-color var(--t), box-shadow var(--t);
-  z-index: 1;
+  /* Solid background so cards cover each other's body */
+  backdrop-filter: none;
 }
 
-/* Reversed: card 1 on bottom, later cards stack ON TOP */
+/* Each card sticks 62px LOWER than the previous —
+   62px ≈ top-padding (28px) + h3 line-height (~34px)
+   This leaves just the heading of the previous card peeking at the top */
 .sticky-card:nth-child(1) {
-  top: calc(var(--nav-h) + 80px);
+  top: calc(var(--nav-h) + 16px);
   z-index: 1;
 }
 
 .sticky-card:nth-child(2) {
-  top: calc(var(--nav-h) + 60px);
+  top: calc(var(--nav-h) + 16px + 62px);
   z-index: 2;
 }
 
 .sticky-card:nth-child(3) {
-  top: calc(var(--nav-h) + 40px);
+  top: calc(var(--nav-h) + 16px + 62px * 2);
   z-index: 3;
 }
 
 .sticky-card:nth-child(4) {
-  top: calc(var(--nav-h) + 20px);
+  top: calc(var(--nav-h) + 16px + 62px * 3);
   z-index: 4;
 }
 
 .sticky-card:nth-child(5) {
-  top: calc(var(--nav-h) + 8px);
+  top: calc(var(--nav-h) + 16px + 62px * 4);
   z-index: 5;
 }
 
