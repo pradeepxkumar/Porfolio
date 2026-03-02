@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Pradeep Kumar – AI & Data Science Engineering Student. Projects, Skills, Experience and Contact." />
+  <title>Pradeep Kumar | AI & Data Science Engineer</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+
+<body class="dark-mode">
+
+  <!-- ========== NAV ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="#home"><span class="logo-bracket">&lt;</span>PK<span
+          class="logo-bracket">/&gt;</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-moon"
+            id="themeIcon"></i></button>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HOME ========== -->
+  <section id="home" class="section hero-section">
+    <canvas id="ai-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-left">
+
+        <!-- Name — Bold + Green -->
+        <h1 class="hero-name">
+          Hello! I'm<br><span class="green name-gradient">Pradeep Kumar</span>
+        </h1>
+
+        <!-- Typewriter role -->
+        <p class="hero-role">
+          I am a <span class="typewriter-text" id="typewriter"></span><span class="cursor">|</span>
+        </p>
+
+        <!-- Animated tagline: Coffee into Code -->
+        <p class="hero-tagline-animated" id="coffeeTagline" aria-label="Turning Coffee into Code, then Magic."></p>
+
+
+        <div class="hero-socials">
+          <a href="mailto:Pradeep20052004@gmail.com" class="social-icon si-gmail" aria-label="Gmail"><i
+              class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/pradeepxkumar5" target="_blank" class="social-icon si-linkedin"
+            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/pradeepxkumar" target="_blank" class="social-icon si-github"
+            aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://leetcode.com/u/pradeepxkumar/" target="_blank" class="social-icon si-leetcode"
+            aria-label="LeetCode"><i class="fas fa-code"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="profile-wrapper">
+          <div class="profile-ring ring-1"></div>
+          <div class="profile-ring ring-2"></div>
+          <div class="profile-img-container">
+            <img src="profile.jpeg" alt="Pradeep Kumar" class="profile-img" id="profileImg" />
+            <div class="profile-placeholder" id="profilePlaceholder"><i class="fas fa-user"></i></div>
+          </div>
+          <div class="floating-badge badge-1"><i class="fab fa-python" style="color:#3776AB"></i> Python</div>
+          <div class="floating-badge badge-2"><i class="fas fa-brain" style="color:#22c55e"></i> ML</div>
+          <div class="floating-badge badge-3"><i class="fas fa-eye" style="color:#EE4C2C"></i> CV</div>
+          <div class="floating-badge badge-4"><i class="fas fa-code" style="color:#00599C"></i> C++</div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down"><span></span><span></span></a>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About <span class="green">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I am an <strong>AI/ML Enthusiast</strong> currently pursuing <strong>B.Tech in Artificial Intelligence and
+              Data Science</strong> from <span class="green">Gati Shakti Vishwavidyalaya (GSV)</span>, Vadodara.
+          </p>
+          <p>I enjoy solving <strong>DSA problems</strong>, working with <strong>data analytics</strong>, and building
+            machine learning-based intelligent systems.</p>
+          <p>I am passionate about applying AI to real-world problems, especially in <strong>transportation</strong> and
+            <strong>operational systems</strong>. I also enjoy <strong>esports gaming</strong>, which enhances my
+            strategic thinking and decision-making skills.
+          </p>
+
+
+        </div>
+        <div class="about-visual reveal">
+          <div class="code-block">
+            <div class="code-header"><span class="dot red"></span><span class="dot yellow"></span><span
+                class="dot green"></span><span class="code-filename">about.py</span></div>
+            <pre><code><span class="kw">class</span> <span class="cl">PradeepKumar</span>:
+  <span class="kw">def</span> <span class="fn">__init__</span>(self):
+    self.name    = <span class="str">"Pradeep Kumar"</span>
+    self.role    = <span class="str">"AI & DS Engineer"</span>
+    self.college = <span class="str">"GSV, Vadodara"</span>
+    self.cgpa    = <span class="num">7.84</span>
+    self.loves   = [
+      <span class="str">"DSA"</span>,
+      <span class="str">"AI/ML/DL/GenAI"</span>,
+      <span class="str">"Esports &amp; Strategy"</span>,
+    ]
+
+  <span class="kw">def</span> <span class="fn">say_hi</span>(self):
+    <span class="kw">return</span> <span class="str">"Let's build something amazing!"</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">My <span class="green">Education</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="tl-content">
+              <h3>Gati Shakti Vishwavidyalaya</h3>
+              <p class="tl-sub">B.Tech – Artificial Intelligence & Data Science</p>
+              <p class="tl-location"><i class="fas fa-map-marker-alt"></i> Vadodara, Gujarat</p>
+              <div class="tl-footer"><span class="tl-badge cb-green">CGPA: 7.84</span><span class="tl-date">Aug 2023 –
+                  Jun
+                  2027</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-icon"><i class="fas fa-school"></i></div>
+            <div class="tl-content">
+              <h3>Gyandeep Shikshan Sansthan Sr. Sec. School</h3>
+              <p class="tl-sub">Senior Secondary (Class XII)</p>
+              <p class="tl-location"><i class="fas fa-map-marker-alt"></i> Sikar, Rajasthan</p>
+              <div class="tl-footer"><span class="tl-badge cb-purple">93.40%</span><span class="tl-date">Apr 2021 – Mar
+                  2022</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-icon"><i class="fas fa-book"></i></div>
+            <div class="tl-content">
+              <h3>Govt. Secondary School, Khora</h3>
+              <p class="tl-sub">Secondary (Class X)</p>
+              <p class="tl-location"><i class="fas fa-map-marker-alt"></i> Sikar, Rajasthan</p>
+              <div class="tl-footer"><span class="tl-badge cb-pink">74.17%</span><span class="tl-date">Apr 2019 – Mar
+                  2020</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Work <span class="green">Experience</span></h2>
+      <div class="experience-grid">
+
+        <div class="exp-card reveal">
+          <div class="exp-header">
+            <div class="exp-icon"><i class="fas fa-train"></i></div>
+            <div>
+              <h3>CRIS Office, Delhi</h3>
+              <p class="exp-role">Summer Intern – Machine Learning</p>
+            </div>
+            <span class="exp-badge cb-blue">Internship</span>
+          </div>
+          <ul class="exp-list">
+            <li>Developed ML model for <strong>Arrival to Exam Start prediction</strong> for Indian Railways.</li>
+            <li>Analyzed complex scheduling datasets to improve exam logistics.</li>
+            <li>Collaborated with senior engineers on <strong>data pipeline design</strong>.</li>
+          </ul>
+          <div class="exp-tags"><span>Python</span><span>Machine Learning</span><span>Data Analysis</span></div>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-header">
+            <div class="exp-icon"><i class="fas fa-tools"></i></div>
+            <div>
+              <h3>DRM Office, Jaipur</h3>
+              <p class="exp-role">Summer Intern – Predictive Maintenance</p>
+            </div>
+            <span class="exp-badge">Internship</span>
+          </div>
+          <ul class="exp-list">
+            <li>Built <strong>predictive maintenance models</strong> for railway operations.</li>
+            <li>Developed safety monitoring analytics for railway infrastructure.</li>
+            <li>Worked with domain experts to define model objectives and KPIs.</li>
+          </ul>
+          <div class="exp-tags"><span>Predictive Analytics</span><span>Safety Systems</span><span>ML</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">Skills &amp; <span class="green">Tools</span></h2>
+      <!-- All skills in one flexible pill row -->
+      <div class="all-skills reveal">
+        <div class="skill-pill"><i class="fab fa-python" style="color:#3776AB"></i> Python</div>
+        <div class="skill-pill">C++</div>
+        <div class="skill-pill">C</div>
+        <div class="skill-pill">R</div>
+        <div class="skill-pill"><i class="fas fa-brain" style="color:#22c55e"></i> Machine Learning</div>
+        <div class="skill-pill">Deep Learning</div>
+        <div class="skill-pill">Computer Vision</div>
+        <div class="skill-pill">NLP</div>
+        <div class="skill-pill">Time Series Forecasting</div>
+        <div class="skill-pill">DSA</div>
+        <div class="skill-pill">Neural Networks</div>
+        <div class="skill-pill">Reinforcement Learning</div>
+        <div class="skill-pill">Data Analytics</div>
+        <div class="skill-pill">Feature Engineering</div>
+        <div class="skill-pill">Model Deployment</div>
+      </div>
+
+      <!-- Extended tools grid -->
+      <div class="tools-grid-full reveal">
+        <div class="tool-card vscode"> <i class="fas fa-code"></i><span>VS Code</span></div>
+        <div class="tool-card mysql"> <i class="fas fa-database"></i><span>MySQL</span></div>
+        <div class="tool-card pytorch"> <i class="fas fa-fire"></i><span>PyTorch</span></div>
+        <div class="tool-card tf"> <i class="fas fa-layer-group"></i><span>TensorFlow</span></div>
+        <div class="tool-card sklearn"> <i class="fas fa-robot"></i><span>Scikit-learn</span></div>
+        <div class="tool-card opencv"> <i class="fas fa-eye"></i><span>OpenCV</span></div>
+        <div class="tool-card hf"> <i class="fas fa-smile"></i><span>HuggingFace</span></div>
+        <div class="tool-card hadoop"> <i class="fas fa-server"></i><span>Hadoop</span></div>
+        <div class="tool-card cisco"> <i class="fas fa-network-wired"></i><span>Cisco PT</span></div>
+        <div class="tool-card git"> <i class="fab fa-git-alt"></i><span>Git</span></div>
+        <div class="tool-card jupyter"> <i class="fas fa-book"></i><span>Jupyter</span></div>
+        <div class="tool-card pandas"> <i class="fas fa-table"></i><span>Pandas</span></div>
+        <div class="tool-card numpy"> <i class="fas fa-calculator"></i><span>NumPy</span></div>
+        <div class="tool-card stream"> <i class="fas fa-water"></i><span>Streamlit</span></div>
+        <div class="tool-card yolo"> <i class="fas fa-crosshairs"></i><span>YOLO</span></div>
+      </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Project <span class="showcase-word" id="showcaseWord">Showcase</span></h2>
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Project 1 -->
+        <div class="project-card sticky-card">
+          <div class="project-card-body">
+            <h3>Hotspot Identification</h3>
+            <p class="project-desc">Data-driven system to identify high-risk zones in railway transportation networks.
+            </p>
+            <ul class="project-bullets">
+              <li>Spatio-temporal analysis to detect high-accident zones across stations.</li>
+              <li>Visualized risk heatmaps for operational decision-making.</li>
+              <li>Integrated historical incident data with network topology graphs.</li>
+            </ul>
+            <div class="project-tags">
+              <span>Python</span><span>GeoPandas</span><span>Spatio-Temporal</span><span>Analytics</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/pradeepxkumar/Hotspot-Identification" target="_blank"
+                class="project-link primary"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-icon-wrap"><i class="fas fa-map-marked-alt"></i></div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card sticky-card">
+          <div class="project-card-body">
+            <h3>Railway Defect Detection</h3>
+            <p class="project-desc">Real-time railway track defect detection system using YOLOv8 and Streamlit.</p>
+            <ul class="project-bullets">
+              <li>YOLOv8-based model trained on custom railway track defect dataset.</li>
+              <li>Streamlit dashboard for real-time detection and alert reporting.</li>
+              <li>Achieved 91%+ mAP on test split with live video inference.</li>
+            </ul>
+            <div class="project-tags"><span>YOLOv8</span><span>PyTorch</span><span>Computer
+                Vision</span><span>Streamlit</span></div>
+            <div class="project-links">
+              <a href="https://github.com/pradeepxkumar/Rail-defect-detection" target="_blank"
+                class="project-link primary"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-icon-wrap"><i class="fas fa-train"></i></div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card sticky-card">
+          <div class="project-card-body">
+            <h3>Arrival to Exam Start Prediction</h3>
+            <p class="project-desc">ML model for Indian Railways CRIS to optimize exam center logistics using scheduling
+              data.</p>
+            <ul class="project-bullets">
+              <li>Trained regression and ensemble models on multi-year scheduling records.</li>
+              <li>Reduced prediction error by 23% vs baseline heuristics.</li>
+              <li>Model deployed as an internal tool for CRIS exam logistics team.</li>
+            </ul>
+            <div class="project-tags"><span>Machine
+                Learning</span><span>Scikit-learn</span><span>Python</span><span>CRIS</span></div>
+            <div class="project-links">
+              <a href="https://github.com/pradeepxkumar/Railway-exam-start-delay-prediction" target="_blank"
+                class="project-link primary"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-icon-wrap"><i class="fas fa-clock"></i></div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card sticky-card">
+          <div class="project-card-body">
+            <h3>Inventory Management System</h3>
+            <p class="project-desc">Java desktop application with role-based access and full inventory control.</p>
+            <ul class="project-bullets">
+              <li>Java Swing UI with role-based authentication (Admin / Staff).</li>
+              <li>MySQL + JDBC backend for persistent data management.</li>
+              <li>Modules: stock tracking, purchase orders, and low-stock alerts.</li>
+            </ul>
+            <div class="project-tags"><span>Java</span><span>Swing</span><span>MySQL</span><span>JDBC</span></div>
+            <div class="project-links">
+              <a href="https://github.com/pradeepxkumar/Inventory_Management" target="_blank"
+                class="project-link primary"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-icon-wrap"><i class="fas fa-boxes"></i></div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card sticky-card">
+          <div class="project-card-body">
+            <h3>RailConnect</h3>
+            <p class="project-desc">Relational database system for comprehensive railway operations management.</p>
+            <ul class="project-bullets">
+              <li>Designed normalized schema for trains, routes, tickets, and staff.</li>
+              <li>Complex SQL queries for scheduling, route optimization and reporting.</li>
+              <li>Simulates real-world Indian Railways booking workflows.</li>
+            </ul>
+            <div class="project-tags"><span>SQL</span><span>MySQL</span><span>DBMS</span><span>Railway Ops</span></div>
+            <div class="project-links">
+              <a href="https://github.com/pradeepxkumar/RailConnect-DBMS" target="_blank"
+                class="project-link primary"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-icon-wrap"><i class="fas fa-database"></i></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACHIEVEMENTS ========== -->
+  <section id="achievements" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">My <span class="green">Achievements</span></h2>
+      <div class="achievements-grid">
+        <a href="https://drive.google.com/file/d/1Fl6tJ3EWT6GMU-Htr080PspUaZVK3vmN/view" target="_blank"
+          class="achievement-card reveal">
+          <div class="ach-icon"><i class="fas fa-trophy"></i></div>
+          <h3>Raisina Hackathon</h3>
+          <p>Received <strong>Certificate of Appreciation</strong> for innovative problem-solving at the national-level
+            hackathon.</p>
+        </a>
+        <a href="https://drive.google.com/file/d/1Fl6tJ3EWT6GMU-Htr080PspUaZVK3vmN/view" target="_blank"
+          class="achievement-card reveal">
+          <div class="ach-icon"><i class="fas fa-certificate"></i></div>
+          <h3>NVIDIA Deep Learning</h3>
+          <p>Certified in <strong>Deep Learning</strong> by NVIDIA — neural networks, training pipelines and inference
+            optimization.</p>
+        </a>
+        <a href="https://drive.google.com/file/d/1Fl6tJ3EWT6GMU-Htr080PspUaZVK3vmN/view" target="_blank"
+          class="achievement-card reveal">
+          <div class="ach-icon"><i class="fas fa-eye"></i></div>
+          <h3>NVIDIA Computer Vision</h3>
+          <p>Certified in <strong>Computer Vision</strong> by NVIDIA — image classification, object detection and
+            segmentation.</p>
+        </a>
+        <a href="https://drive.google.com/file/d/1Fl6tJ3EWT6GMU-Htr080PspUaZVK3vmN/view" target="_blank"
+          class="achievement-card reveal">
+          <div class="ach-icon"><i class="fas fa-robot"></i></div>
+          <h3>Real-Time AI Systems</h3>
+          <p>Built and deployed <strong>real-time AI systems</strong> processing large-scale railway datasets for
+            safety-critical use.</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Let's <span class="green">Connect</span></h2>
+      <p class="contact-intro">I'm always open to new opportunities, collaborations, and conversations. Drop me a
+        message!</p>
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <p class="ci-label">Email</p><a href="mailto:pradeep20052004@gmail.com"
+                class="ci-value">pradeep20052004@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <p class="ci-label">Phone</p><a href="tel:+919876543210" class="ci-value">+91 98765 43210</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <p class="ci-label">Location</p><span class="ci-value">Vadodara, Gujarat, India</span>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://linkedin.com" target="_blank" class="cs-btn linkedin" aria-label="LinkedIn"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:pradeep20052004@gmail.com" class="cs-btn gmail" aria-label="Gmail"><i
+                class="fas fa-envelope"></i></a>
+            <a href="https://twitter.com" target="_blank" class="cs-btn twitter" aria-label="Twitter"><i
+                class="fab fa-twitter"></i></a>
+            <a href="https://leetcode.com" target="_blank" class="cs-btn leetcode" aria-label="LeetCode"><i
+                class="fas fa-code"></i></a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group"><input type="text" id="name" placeholder="Your Name" required /></div>
+          <div class="form-group"><input type="email" id="email" placeholder="Your Email" required /></div>
+          <div class="form-group"><textarea id="message" rows="5" placeholder="Your Message" required></textarea></div>
+          <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> Send
+            Message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; Built by <span class="green">Pradeep Kumar</span></p>
+      <p class="footer-sub">B.Tech AI &amp; DS · Gati Shakti Vishwavidyalaya</p>
+    </div>
+  </footer>
+
+  <script src="js/animations.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

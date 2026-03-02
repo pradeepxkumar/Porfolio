@@ -1,0 +1,250 @@
+/* ============================================================
+   ANIMATIONS.CSS — Green Theme. Clean. Impactful.
+   ============================================================ */
+
+/* ===== SCROLL REVEAL ===== */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.projects-grid .reveal:nth-child(2) {
+    transition-delay: 0.07s;
+}
+
+.projects-grid .reveal:nth-child(3) {
+    transition-delay: 0.14s;
+}
+
+.projects-grid .reveal:nth-child(4) {
+    transition-delay: 0.21s;
+}
+
+.projects-grid .reveal:nth-child(5) {
+    transition-delay: 0.28s;
+}
+
+.achievements-grid .reveal:nth-child(2) {
+    transition-delay: 0.07s;
+}
+
+.achievements-grid .reveal:nth-child(3) {
+    transition-delay: 0.14s;
+}
+
+.achievements-grid .reveal:nth-child(4) {
+    transition-delay: 0.21s;
+}
+
+.achievements-grid .reveal:nth-child(5) {
+    transition-delay: 0.28s;
+}
+
+.experience-grid .reveal:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.timeline-item:nth-child(2) {
+    transition-delay: 0.12s;
+}
+
+.timeline-item:nth-child(3) {
+    transition-delay: 0.24s;
+}
+
+/* ===== HERO ENTRANCE ===== */
+.hero-label {
+    animation: fadeUp 0.6s ease 0.1s both;
+}
+
+.hero-name {
+    animation: fadeUp 0.7s ease 0.25s both;
+}
+
+.hero-tagline-animated {
+    animation: fadeUp 0.7s ease 0.45s both;
+}
+
+.hero-role {
+    animation: fadeUp 0.7s ease 0.65s both;
+}
+
+.hero-cta {
+    animation: fadeUp 0.6s ease 0.78s both;
+}
+
+.hero-socials {
+    animation: fadeUp 0.6s ease 0.9s both;
+}
+
+.hero-right {
+    animation: fadeIn 1s ease 0.3s both;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* ===== COFFEE INTO CODE — word reveal ===== */
+.coffee-word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.coffee-word.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.coffee-word.green {
+    color: var(--green);
+    font-weight: 600;
+}
+
+/* ===== PROFILE subtle glow ===== */
+.profile-img-container {
+    animation: softPulse 6s ease-in-out infinite;
+}
+
+@keyframes softPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 6px rgba(34, 197, 94, 0.05), var(--shadow-lg);
+    }
+
+    50% {
+        box-shadow: 0 0 0 10px rgba(34, 197, 94, 0.09), var(--shadow-lg);
+    }
+}
+
+/* ===== Section label bar animation ===== */
+.section-label::before {
+    animation: growLeft 0.5s ease both;
+}
+
+.section-label::after {
+    animation: growRight 0.5s ease both;
+}
+
+@keyframes growLeft {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 28px;
+    }
+}
+
+@keyframes growRight {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 28px;
+    }
+}
+
+/* ===== PAGE LOADER ===== */
+#page-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.4s ease;
+}
+
+#page-loader.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loader-inner {
+    width: 38px;
+    height: 38px;
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    border-top-color: var(--green);
+    border-radius: 50%;
+    animation: loaderSpin 0.7s linear infinite;
+}
+
+@keyframes loaderSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ===== BACK-TO-TOP ===== */
+#back-to-top {
+    position: fixed;
+    bottom: 26px;
+    right: 26px;
+    z-index: 500;
+    width: 38px;
+    height: 38px;
+    background: var(--green);
+    border-radius: var(--r-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 0.82rem;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+#back-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#back-to-top:hover {
+    transform: translateY(-3px);
+}
+
+/* ===== CURSOR blink ===== */
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0
+    }
+}
